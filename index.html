@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אחוזת ספסופה - השכרת וילות יוקרה למשפחות</title>
+    <meta name="description" content="אחוזה פרטית בספסופה עם וילה וצימרים - נוף מרהיב, 7 דקות ממירון. מתאים למשפחות seeking חופשה מפנקת בגליל">
+    <meta name="keywords" content="השכרת וילות, צימרים, ספסופה, מירון, גליל, חופשה משפחתית, אחוזה">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#2c5aa0",
+                        secondary: "#4a7c59",
+                        accent: "#d4af37",
+                        light: "#f8f9fa",
+                        dark: "#2d3748"
+                    },
+                    fontFamily: {
+                        'hebrew': ['Assistant', 'Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Assistant', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #2c5aa0 0%, #4a7c59 100%);
+        }
+        
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .feature-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-image {
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-image:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-light font-hebrew text-dark">
+    <!-- Header עם ניווט -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-primary">
+                    אחוזת ספסופה
+                </div>
+                
+                <div class="hidden md:flex space-x-8 space-x-reverse">
+                    <a href="#about" class="text-dark hover:text-primary transition-colors">אודות</a>
+                    <a href="#gallery" class="text-dark hover:text-primary transition-colors">גלריה</a>
+                    <a href="#features" class="text-dark hover:text-primary transition-colors">מתקנים</a>
+                    <a href="#location" class="text-dark hover:text-primary transition-colors">מיקום</a>
+                    <a href="#contact" class="text-dark hover:text-primary transition-colors">צור קשר</a>
+                </div>
+                
+                <div class="md:hidden">
+                    <button class="text-dark">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white">
+        <div class="container mx-auto px-4 py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">חופשה משפחתית מפנקת באחוזה פרטית</h1>
+                    <p class="text-xl mb-8">וילה יוקרתית וצימרים בספסופה עם נוף מרהיב, רק 7 דקות מקבר רבי שמעון בר יוחאי</p>
+                    <div class="flex flex-wrap gap-4">
+                        <button onclick="scrollToSection('contact')" class="cta-button bg-accent text-white px-8 py-4 rounded-full font-semibold text-lg">
+                            הזמינו עכשיו
+                        </button>
+                        <button onclick="scrollToSection('gallery')" class="cta-button bg-white text-primary px-8 py-4 rounded-full font-semibold text-lg">
+                            צפו בתמונות
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <img 
+                        src="https://picsum.photos/600/400?random=1" 
+                        alt="אחוזת ספסופה - נוף מרהיב של הוילה" 
+                        class="w-full rounded-2xl shadow-2xl"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-16">מה מקבלים באחוזה?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card bg-light p-8 rounded-2xl shadow-md text-center">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">וילה מרכזית מפוארת</h3>
+                    <p class="text-gray-600">וילה מרווחת עם 4 חדרים, סלון גדול, מטבח מאובזר וחצר פרטית</p>
+                </div>
+                
+                <div class="feature-card bg-light p-8 rounded-2xl shadow-md text-center">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">2 צימרים נוספים</h3>
+                    <p class="text-gray-600">צימרים נפרדים עם כניסה עצמאית, מושלמים למשפחות מורחבות</p>
+                </div>
+                
+                <div class="feature-card bg-light p-8 rounded-2xl shadow-md text-center">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">נוף פנורמי מרהיב</h3>
+                    <p class="text-gray-600">מרפסות עם נוף עוצר נשימה להרי הגליל והסביבה</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-16">גלרית תמונות</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gallery-image rounded-2xl overflow-hidden">
+                    <img 
+                        src="https://picsum.photos/400/300?random=2" 
+                        alt="סלון הוילה המרכזית" 
+                        class="w-full h-64 object-cover"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="gallery-image rounded-2xl overflow-hidden">
+                    <img 
+                        src="https://picsum.photos/400/300?random=3" 
+                        alt="חדר שינה ראשי" 
+                        class="w-full h-64 object-cover"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="gallery-image rounded-2xl overflow-hidden">
+                    <img 
+                        src="https://picsum.photos/400/300?random=4" 
+                        alt="מטבח מאובזר" 
+                        class="w-full h-64 object-cover"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="gallery-image rounded-2xl overflow-hidden">
+                    <img 
+                        src="https://picsum.photos/400/300?random=5" 
+                        alt="החצר הפרטית" 
+                        class="w-full h-64 object-cover"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="gallery-image rounded-2xl overflow-hidden">
+                    <img 
+                        src="https://picsum.photos/400/300?random=6" 
+                        alt="נוף מהמרפסת" 
+                        class="w-full h-64 object-cover"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="gallery-image rounded-2xl overflow-hidden">
+                    <img 
+                        src="https://picsum.photos/400/300?random=7" 
+                        alt="אחד הצימרים" 
+                        class="w-full h-64 object-cover"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-16">מיקום אסטרטגי</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">ספסופה - פנינת חמד בגליל</h3>
+                    <p class="text-lg text-gray-700 mb-4">
+                        האחוזה ממוקמת ביישוב ספסופה היפהפה, המוקף בנופים מרהימים של הגליל העליון.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-clock text-primary mr-3"></i>
+                            <span>רק 7 דקות נסיעה ממירון וקבר רבי שמעון בר יוחאי</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-car text-primary mr-3"></i>
+                            <span>חניה פרטית בשטח האחוזה</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-tree text-primary mr-3"></i>
+                            <span>סביבה שקטה ופרטית עם אווירה כפרית</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img 
+                        src="https://picsum.photos/600/400?random=8" 
+                        alt="נוף הגליל מהאחוזה" 
+                        class="w-full rounded-2xl shadow-lg"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">מעוניינים בחופשה מפנקת?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">צרו איתנו קשר</h3>
+                    <p class="text-lg mb-6">השאירו פרטים וניצור איתכם קשר בהקדם להשלמת ההזמנה</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-accent text-xl mr-4"></i>
+                            <span class="text-lg">050-123-4567</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-accent text-xl mr-4"></i>
+                            <span class="text-lg">info@sfasuta-estate.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-accent text-xl mr-4"></i>
+                            <span class="text-lg">ספסופה, הגליל העליון</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form class="bg-white text-dark p-8 rounded-2xl shadow-lg">
+                        <div class="mb-6">
+                            <label class="block text-gray-700 mb-2">שם מלא</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 mb-2">טלפון</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 mb-2">אימייל</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 mb-2">תאריכים מבוקשים</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary" placeholder="dd/mm/yyyy - dd/mm/yyyy">
+                        </div>
+                        <button type="button" onclick="handleSubmit()" class="w-full bg-accent text-white py-4 rounded-lg font-semibold text-lg hover:bg-yellow-600 transition-colors">
+                            שלחו פנייה
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">אחוזת ספסופה</h3>
+                    <p class="text-gray-400">חופשה משפחתית מפנקת בנוף מרהיב של הגליל</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">קישורים מהירים</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white">אודות</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white">גלריה</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">צור קשר</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">דרכי התקשרות</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">טלפון: 050-123-4567</li>
+                        <li class="text-gray-400">אימייל: info@sfasuta-estate.com</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">עקבו אחרינו</h3>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">© 2024 אחוזת ספסופה. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="fixed bottom-6 left-6 z-50">
+        <a href="https://wa.me/972501234567" class="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+</body>
+</html>
